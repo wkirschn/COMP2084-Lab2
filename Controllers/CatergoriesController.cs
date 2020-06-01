@@ -11,16 +11,8 @@ namespace Lab_2.Controllers
     {
         public IActionResult Index()
         {
-            var products = new List<Product>();
-
-         for (var i = 1; i <= 10; i++)
-            {
-                products.Add(new Product { Name = "Product " + i.ToString() });
-            }
-
-
-
-            return View(products);
+        
+            return View();
         }
 
  

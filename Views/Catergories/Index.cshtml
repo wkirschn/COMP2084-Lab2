@@ -7,19 +7,17 @@
 <h1>Index!</h1>
 
     <li>
-            <a asp-controller="store" asp-action="details" asp-route-product="macbook"> macbook</a>
-        </li>
-        <li>
-            <a asp-controller="store" asp-action="details" asp-route-product="dell laptop"> dell laptop</a>
-        </li>
-        <li>
-            <a asp-controller= "store" asp-action= "details" asp-route-product= "iphone" > iphone </ a >
-        </ li >
-        < li >
-            < a asp-controller= "store" asp-action= "details" asp-route-product= "android phone" > android phone</a>
-        </li>
+      <a asp-controller="Catergories" asp-action="Details" asp-route-product="Food">Food</a>
+    </li>
+    <li>
+      <a asp-controller="Catergories" asp-action="Details" asp-route-product="Tech">Tech</a>
+    </li>
+    <li>
+      <a asp-controller= "Catergories" asp-action="Details" asp-route-product="Sports">Sports</a>
+     </li>
+       
 
-    @foreach (var product in Model)
+    @*@foreach (var product in Model)
     {
-        < li >< a asp - controller = "Store" asp - action = "Details" asp - route - product = "@product.Name" > @product.Name </ a ></ li >
-    }
+        <li><a asp-controller = "Categories" asp-action = "Details" asp-route-product = "@product.Name" > @product.Name </a></li>
+    }*@

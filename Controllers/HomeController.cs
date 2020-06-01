@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Lab_2.Models;
+using Lab_2.Controllers;
+    
 
 namespace Lab_2.Controllers
 {
@@ -28,10 +30,7 @@ namespace Lab_2.Controllers
             return View();
         }
 
-        public IActionResult Details()
-        {
-            return View();
-        }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
